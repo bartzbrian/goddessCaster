@@ -38,11 +38,9 @@ void setup() {
   if (! radio.begin()) {  
     Serial.println("Couldn't find radio?");
     while(true){
-      digitalWrite(2,HIGH);
-      digitalWrite(3,HIGH);
+      digitalWrite(A1,HIGH);
       delay(250);
-      digitalWrite(2,LOW);
-      digitalWrite(3,LOW);
+      digitalWrite(A1,LOW);
       delay(250);
     }
   }
